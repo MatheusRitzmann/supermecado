@@ -13,11 +13,13 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8"></div>
                     <h1>Produtos(novo)</h1>
-                    <form>
+                    <form action="{{route(produtos.inserir')}} method="post">
   <div class="form-group">
-    <label for="nome" class="form-label">Nome</label>
-    <input type="text" class="form-control" id="nome" placeholder="nome">
+    <label for="preco" class="form-label">preço</label>
+    <input type="number" step="0.01" class="form-control" id="preco" placeholder="Preço">
   </div>
+  <imput type"submit" value="cadastrar" class="btn btn-success">
+</form>
                  <div class="row">
                     <a href="#"class="btn btn-primary">Novo</a>
                  </div>
