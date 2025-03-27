@@ -11,7 +11,7 @@
     <label for="preco" class="form-label">preço</label>
     <input type="number" step="0.01" class="form-control" id="preco" name="preco" placeholder="Preço" min="0">
   </div>
-  <imput type"submit" value="cadastrar" class="btn btn-success">
+  <imput type"submit" value="Atualizar" class="btn btn-success">
 </form>
                  <div class="row">
                     <a href="#"class="btn btn-primary">Novo</a>
@@ -22,4 +22,3 @@
        
 @endsection                  
                
-

@@ -21,6 +21,7 @@ Route::get('/', function () {
 
 
 Route::get('/produtos', [ProdutosController::class, 'show']);
-Route::get('/tipo_produtos', [TipoProdutoController::class, 'show']);
-Route::get('/produtos/novo', [ProdutosController::class, 'novo'])->name('produtos.novo'); // corrigido
+Route::get('/tipo_produtos', [TipoProdutoController::class, 'show'])->name('produtos.show');
+Route::get('/produtos/novo', [ProdutosController::class, 'novo'])->name('produtos.novo'); 
 Route::post('/produtos/novo', [ProdutosController::class, 'inserir'])->name('produtos.inserir');
+Route::post('/produtos/alterar/{id}', [ProdutosController::class, 'alterar'])->name('produtos.alterar');

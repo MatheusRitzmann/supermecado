@@ -8,7 +8,8 @@
                         <tr>
                             <th>ID</th>
                             <th>Nome</th>
-                            <th>Preço</th>    
+                            <th>Preço</th>   
+                            <th>Operações</th>   
                         </tr>
                     </thead>
                         <tbody>
@@ -17,6 +18,7 @@
                         <td>{{ $produto->id }}</td>
                         <td>{{ $produto->nome }}</td>
                         <td>{{ $produto->preco }}</td>
+                        <td><a href="#{{route('produtos.alterar', ['id' => $produto ->id])}}"></a>Alterar</td>
                         </tr>
                         @endforeach
                     </tbody>
